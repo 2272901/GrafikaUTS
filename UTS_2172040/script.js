@@ -126,9 +126,10 @@ function gerak(imageDataSaya, point_array, point_array2) {
       document.querySelector("#kalah").innerHTML = "Kalah";
       clearInterval(interval);
       stateGlob = false;
+      alert("Nomor anda yang terdaftar adalah: "+ Math.ceil(poin))
     } else {
-      poin += 2;
-      document.querySelector("#nilai").innerHTML = poin;
+      poin += 1/5;
+      document.querySelector("#nilai").innerHTML = Math.ceil(poin);
     }
   }
 
